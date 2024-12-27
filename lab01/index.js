@@ -1,6 +1,8 @@
 const express = require('express');
+const hbs = require('hbs');
 const app = express();
 
+app.set('view engine', 'hbs'); // <-- NOTE 2
 
 // ROUTES
 app.get('/', function(req,res){
